@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>mkdocs - Actividad 3</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "mkdocs";
+        var mkdocs_page_input_path = "mkdocs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Actividad 3
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">mkdocs</a>
+    <ul class="current">
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Actividad 3</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">mkdocs</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h2 id="1-actualizar-el-sistema">1. Actualizar el sistema</h2>
+<p>Es importante asegurarte de que tu sistema esté actualizado antes de instalar nuevos paquetes.</p>
+<p><code>sudo apt update</code></p>
+<hr />
+<h2 id="2-instalar-python">2. Instalar Python</h2>
+<h3 id="verificar-si-python-ya-esta-instalado">Verificar si Python ya está instalado</h3>
+<p>Ejecuta el siguiente comando para comprobar si Python ya está instalado:</p>
+<p><code>python3 --version</code>
+Si Python no está instalado, sigue estos pasos:</p>
+<h3 id="instalar-python-3">Instalar Python 3</h3>
+<ol>
+<li>
+<p>Instala Python 3 y sus herramientas:</p>
+<p><code>sudo apt install -y python3 python3-pip python3-venv</code></p>
+</li>
+</ol>
+<p><img alt="instalar python" src="/imagenes/instalar python3-dev python3-pip.PNG" /></p>
+<ol>
+<li>
+<p>Verifica la instalación:</p>
+<p><code>python3 --version
+   pip3 --version</code></p>
+</li>
+</ol>
+<h2 id="_1"><img alt="versiones" src="/imagenes/comprobaciones1.PNG" /></h2>
+<h2 id="3-instalar-mkdocs">3. Instalar MkDocs</h2>
+<h3 id="usar-pip-para-instalar-mkdocs">Usar <code>pip</code> para instalar MkDocs</h3>
+<ol>
+<li>
+<p>Asegúrate de que <code>pip</code> esté actualizado:</p>
+<p><code>pip3 install --upgrade pip</code></p>
+</li>
+<li>
+<p>Instala MkDocs:</p>
+<p><code>pip3 install mkdocs</code></p>
+</li>
+</ol>
+<p><img alt="instalar mkdocs" src="/imagenes/pip3 install mkdocs.PNG" /></p>
+<ol>
+<li>
+<p>Verificamos varias  la instalación:</p>
+<p><code>mkdocs --version</code></p>
+</li>
+</ol>
+<p><img alt="verificaciones" src="/imagenes/comprobaciones3.PNG" /></p>
+<hr />
+<h2 id="4-configuracion-inicial-de-mkdocs">4. Configuración inicial de MkDocs</h2>
+<h3 id="crear-un-proyecto-base-de-mkdocs">Crear un proyecto base de MkDocs</h3>
+<ol>
+<li>
+<p>Crea un nuevo proyecto:</p>
+<p><code>mkdocs new my_project (Le ponemos el nombre que queramos)</code></p>
+</li>
+</ol>
+<p><img alt="crear proyecto" src="/imagenes/crear project1.PNG" /></p>
+<ol>
+<li>
+<p>Cambia al directorio del proyecto:</p>
+<p><code>cd my_project</code></p>
+</li>
+<li>
+<p>Inicia el servidor de desarrollo de MkDocs:</p>
+<p><code>mkdocs serve 0.0.0.0:8000</code></p>
+</li>
+</ol>
+<p><img alt="iniciar" src="/imagenes/iniciarnavegador.PNG" /></p>
+<ol>
+<li>Abre tu navegador y accede a <code>http://127.0.0.1:8000</code> para ver tu sitio.</li>
+</ol>
+<p><img alt="pagina" src="/imagenes/pagina.PNG" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
