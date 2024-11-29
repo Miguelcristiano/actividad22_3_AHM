@@ -73,3 +73,5 @@ Si Python no está instalado, sigue estos pasos:
 ![iniciar](/imagenes/iniciarnavegador.PNG)
 
 4. Abre tu navegador y accede a `http://127.0.0.1:8000` para ver tu sitio.
+
+![pagina](/imagenes/pagina.PNG)
