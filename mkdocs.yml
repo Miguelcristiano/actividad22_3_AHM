@@ -1,0 +1,7 @@
+site_name: Actividad 3
+
+nav:
+  - Home: index.md
+  - mkdocs: mkdocs.md
+
+theme: readthedocs
