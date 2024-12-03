@@ -27,7 +27,7 @@ Si Python no está instalado, sigue estos pasos:
     ```python3 --version
        pip3 --version```
 
-![versiones](/imagenes/comprobaciones1.PNG)
+![versiones](imagenes/comprobaciones1.PNG)
 ---
 
 ## 3. Instalar MkDocs
@@ -42,13 +42,13 @@ Si Python no está instalado, sigue estos pasos:
 
     ```pip3 install mkdocs```
 
-![instalar mkdocs](/imagenes/pip3 install mkdocs.PNG)
+![instalar mkdocs](imagenes/pip3 install mkdocs.PNG)
 
 3. Verificamos varias  la instalación:
 
     ```mkdocs --version```
 
-![verificaciones](/imagenes/comprobaciones3.PNG)
+![verificaciones](imagenes/comprobaciones3.PNG)
 
 ---
 
@@ -60,7 +60,7 @@ Si Python no está instalado, sigue estos pasos:
 
     ```mkdocs new my_project (Le ponemos el nombre que queramos)```
 
-![crear proyecto](/imagenes/crear project1.PNG)
+![crear proyecto](imagenes/crear project1.PNG)
 
 2. Cambia al directorio del proyecto:
 
@@ -70,8 +70,8 @@ Si Python no está instalado, sigue estos pasos:
 
     ```mkdocs serve 0.0.0.0:8000```
 
-![iniciar](/imagenes/iniciarnavegador.PNG)
+![iniciar](imagenes/iniciarnavegador.PNG)
 
 4. Abre tu navegador y accede a `http://127.0.0.1:8000` para ver tu sitio.
 
-![pagina](/imagenes/pagina.PNG)
+![pagina](imagenes/pagina.PNG)
