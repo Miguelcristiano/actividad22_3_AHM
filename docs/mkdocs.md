@@ -20,7 +20,7 @@ Si Python no está instalado, sigue estos pasos:
 
     ```sudo apt install -y python3 python3-pip python3-venv```
 
-![instalar python](/imagenes/instalar python3-dev python3-pip.PNG)
+![instalar python](imagenes/instalar python3-dev python3-pip.PNG)
 
 2. Verifica la instalación:
 
