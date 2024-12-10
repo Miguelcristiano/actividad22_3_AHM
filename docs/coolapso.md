@@ -9,7 +9,7 @@
    hugo new site nombre-del-sitio
    ```
 
-![Sitio](/imagenes_cote/new.PNG)
+![Sitio](imagenes_cote/new.PNG)
 
 ## Instalación del Tema
 
@@ -30,7 +30,7 @@ Para mantener el tema actualizado fácilmente:
    git submodule add https://github.com/4s3ti/hugo-theme-hello-4s3ti.git themes/hello-4s3ti
    ```
 
-![Submodulo](/imagenes_cote/sub.PNG)
+![Submodulo](imagenes_cote/sub.PNG)
 
 ## Configuración Básica
 
@@ -49,7 +49,7 @@ Para mantener el tema actualizado fácilmente:
      keywords = "blog, homepage"
    ```
 
-![Conf](/imagenes_cote/toml.PNG)
+![Conf](imagenes_cote/toml.PNG)
 
 2. (Opcional) Configuración de menús:
    ```
@@ -59,7 +59,7 @@ Para mantener el tema actualizado fácilmente:
      url        = "/posts"
    ```
 
-![Nav](/imagenes_cote/menu.PNG)
+![Nav](imagenes_cote/menu.PNG)
 
 3. (Opcional) Copia el contenido de `exampleSite` incluido en el repositorio del tema para ver ejemplos:
    ```
@@ -74,4 +74,4 @@ Para mantener el tema actualizado fácilmente:
    ```
 2. Abre tu navegador en `http://localhost:1313`.
 
-![Host](/imagenes_cote/iniciar.PNG)
+![Host](imagenes_cote/iniciar.PNG)
