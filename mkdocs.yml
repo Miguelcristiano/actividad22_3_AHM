@@ -1,4 +1,5 @@
 site_name: Actividad 3
+site_url: ""
 
 nav:
   - Home: index.md
