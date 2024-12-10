@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>coolapso - Actividad 3</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "coolapso";
+        var mkdocs_page_input_path = "coolapso.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Actividad 3
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../mkdocs/">mkdocs</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">coolapso</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#prerrequisitos">Prerrequisitos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#instalacion-del-tema">Instalación del Tema</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#opcion-1-clonando-directamente">Opción 1: Clonando directamente</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#opcion-2-usando-submodulos-de-git">Opción 2: Usando submódulos de Git</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuracion-basica">Configuración Básica</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visualizacion">Visualización</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Actividad 3</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">coolapso</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="instalacion-y-configuracion-del-tema-hello-4s3ti-en-hugo">Instalación y Configuración del Tema Hello-4s3ti en Hugo</h1>
+<h2 id="prerrequisitos">Prerrequisitos</h2>
+<ol>
+<li>Tener <a href="https://gohugo.io/">Hugo</a> instalado en tu sistema.</li>
+<li>Contar con un proyecto Hugo ya inicializado:
+   <code>hugo new site nombre-del-sitio</code></li>
+</ol>
+<p><img alt="Sitio" src="../imagenes_cote/new.PNG" /></p>
+<h2 id="instalacion-del-tema">Instalación del Tema</h2>
+<h3 id="opcion-1-clonando-directamente">Opción 1: Clonando directamente</h3>
+<ol>
+<li>Accede al directorio de tu proyecto:
+   <code>cd nombre-del-sitio</code></li>
+<li>Clona el repositorio del tema en la carpeta <code>themes/</code>:
+   <code>git clone https://github.com/4s3ti/hugo-theme-hello-4s3ti.git themes/hello-4s3ti</code></li>
+</ol>
+<h3 id="opcion-2-usando-submodulos-de-git">Opción 2: Usando submódulos de Git</h3>
+<p>Para mantener el tema actualizado fácilmente:
+1. Añádelo como submódulo:
+   <code>git submodule add https://github.com/4s3ti/hugo-theme-hello-4s3ti.git themes/hello-4s3ti</code></p>
+<p><img alt="Submodulo" src="../imagenes_cote/sub.PNG" /></p>
+<h2 id="configuracion-basica">Configuración Básica</h2>
+<ol>
+<li>Edita el archivo <code>config.toml</code> en la raíz y añade las siguientes configuraciones mínimas:
+   ```
+   baseurl      = "http://example.com/"
+   title        = "Mi Blog"
+   languageCode = "en-us"
+   theme        = "hello-4s3ti"
+   paginate     = 10</li>
+</ol>
+<p>[params]
+     homeSubtitle = "Un blog simple y hermoso"
+     enableSharingButtons = true
+     description = "Mi nueva página web o blog"
+     keywords = "blog, homepage"
+   ```</p>
+<p><img alt="Conf" src="../imagenes_cote/toml.PNG" /></p>
+<ol>
+<li>(Opcional) Configuración de menús:
+   <code>[[menu.main]]
+     identifier = "blog"
+     name       = "Blog"
+     url        = "/posts"</code></li>
+</ol>
+<p><img alt="Nav" src="../imagenes_cote/menu.PNG" /></p>
+<ol>
+<li>(Opcional) Copia el contenido de <code>exampleSite</code> incluido en el repositorio del tema para ver ejemplos:
+   <code>cp -r themes/hello-4s3ti/exampleSite/* .</code></li>
+</ol>
+<h2 id="visualizacion">Visualización</h2>
+<ol>
+<li>Genera y prueba el sitio en un servidor local:
+   <code>hugo serve</code></li>
+<li>Abre tu navegador en <code>http://localhost:1313</code>.</li>
+</ol>
+<p><img alt="Host" src="../imagenes_cote/iniciar.PNG" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../mkdocs/" class="btn btn-neutral float-left" title="mkdocs"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../mkdocs/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
