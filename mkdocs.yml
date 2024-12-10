@@ -4,6 +4,6 @@ site_url: "https://miguelcristiano.github.io/actividad22_3_AHM/"
 nav:
   - Home: index.md
   - mkdocs: mkdocs.md
-  - Coolapso: coolapso.md
+  - coolapso: coolapso.md
 
 theme: readthedocs
